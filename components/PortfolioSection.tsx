@@ -25,22 +25,21 @@ const PortfolioSection = () => {
       href: "https://jobhunt.realcube.estate",
       img: portfolio2,
       heading: "REALCUBE JOBHUNT",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid tempore delectus. Quod, tempora facere deserunt fuga ab quia quisquam."
-
+      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
     },
     {
       id: 3,
       href: "https://felixhawk.com/",
       img: portfolio3,
       heading: "Felix Hawk",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid tempore delectus. Quod, tempora facere deserunt fuga ab quia quisquam."
+      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
     },
     {
       id: 4,
       href: "https://zaman-marketer.vercel.app/",
       img: portfolio4,
       heading: "Zaman Marketer",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid tempore delectus. Quod, tempora facere deserunt fuga ab quia quisquam."
+      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
 
     },
     {
@@ -48,7 +47,7 @@ const PortfolioSection = () => {
       href: "https://jobhunt.realcube.estate",
       img: portfolio2,
       heading: "REALCUBE JOBHUNT",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid tempore delectus. Quod, tempora facere deserunt fuga ab quia quisquam."
+      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
 
     },
     {
@@ -56,24 +55,25 @@ const PortfolioSection = () => {
       href: "https://felixhawk.com/",
       img: portfolio3,
       heading: "Felix Hawk",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid tempore delectus. Quod, tempora facere deserunt fuga ab quia quisquam."
+      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
     }
   ]
   return (
     <div className={`flex flex-col p-9 items-center justify-center ${darkMode ? "bg-black text-white": ""}`}>
       <h1 className='text-2xl font-bold '>Portfolio</h1>
-      <div className='grid grid-cols-3 w-[85%] gap-5 mt-2'>
+      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:w-[85%] w-[100%] gap-5 mt-2'>
         {portfolio.map((item:any)=>{
           const communitySlug = item.heading
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${communitySlug}`} key={item.id} className={`flex flex-col rounded-md shadow-md w-[400px] ${darkMode ? "bg-white bg-opacity-50 text-black": ""}`}>
-          <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
+            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-md md:w-[26vw] sm:w-[43vw] ${darkMode ? "bg-white text-black bg-red-600": ""}`}>
+          <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
           <b className='font-bold'>{item.heading} </b>
           <p className=''>{item.text}</p>
+          <p className='underline'>View More</p>
           </div>
         </Link>
           )

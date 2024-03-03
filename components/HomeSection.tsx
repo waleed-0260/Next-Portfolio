@@ -5,8 +5,8 @@ import home from "@/images/home.jpg";
 import { FaLinkedinIn, FaInstagram, FaFacebook, FaGithub  } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useTheme } from './ThemeContext';
-import { Button } from './ui/button'
+import { useTheme } from "./ThemeContext";
+import { Button } from "./ui/button"
 
 const HomeSection = () => {
   const { darkMode } = useTheme();
@@ -30,7 +30,7 @@ const HomeSection = () => {
 
   return (
     <div
-    className={`flex flex-row items-center justify-between p-6 gap-2 ${darkMode ? "bg-black text-white": ""} transition-all`}
+    className={`flex sm:flex-row flex-col items-center justify-between p-6 gap-2 ${darkMode ? "bg-black text-white": ""} transition-all`}
 >
       <motion.div
         className="w-[100%] flex items-center justify-center"
@@ -44,10 +44,10 @@ const HomeSection = () => {
         initial={{ x: 100, opacity: 0 }} // Initial position and opacity for the second div
         animate={{ x: 0, opacity: 1 }} // Animation for the second div when it appears
         transition={{ type: "spring", stiffness: 100 }}>
-        <p className="text-sm ">Hi, I'm</p>
+        <p className="text-sm ">Hi, I&apos;m</p>
         <p className="text-4xl font-bold text-red-800">Muhammad Waleed Ahsan</p>
         <p className="text-md">
-        Dedicated to crafting captivating digital experiences. With expertise in React.js and a passion for intuitive design, I strive to create seamless solutions that inspire and engage. Let's innovate together and bring your vision to life.
+        Dedicated to crafting captivating digital experiences. With expertise in React.js and a passion for intuitive design, I strive to create seamless solutions that inspire and engage. Let&apos;s innovate together and bring your vision to life.
         </p>
 
 
@@ -68,8 +68,8 @@ const HomeSection = () => {
       ))}
         </div>
         <div>
-          <Link href={'/portfolio'}>
-        <Button variant={'outline'} className="rounded-3xl bg-black text-white">Portfolio</Button>
+          <Link href={"/portfolio"}>
+        <Button variant={"outline"} className="rounded-3xl bg-black text-white">Check Out Portfolio</Button>
           </Link>
         </div>
       </motion.div>

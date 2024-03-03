@@ -24,7 +24,7 @@ const Footer = () => {
       { text: <FaGithub className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" }
     ];
   return (
-    <div className={`flex flex-row justify-around items-center p-4 w-full shadow-md ${darkMode ? "bg-black text-white": ""}`}>
+    <div className={`flex sm:flex-row flex-col justify-around sm:items-center p-4 w-full shadow-md ${darkMode ? "bg-black text-white": ""}`}>
        <div className="flex flex-row gap-3 mt-2">
        {links.map((link, index) => (
         <Link 
@@ -56,7 +56,7 @@ const Footer = () => {
   </Link> */}
         </div>
         <div>
-            <em>Designed by &copy; Muhammad Waleed Ahsan</em>
+            <em>Design and Developed by &copy; Muhammad Waleed Ahsan</em>
         </div>
         </div>
   )
