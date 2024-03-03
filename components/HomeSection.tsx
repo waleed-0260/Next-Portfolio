@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from "react";
-import home from "@/images/home.jpg";
+import Home from "@/images/Home.jpg";
 import { FaLinkedinIn, FaInstagram, FaFacebook, FaGithub  } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ const HomeSection = () => {
         initial={{ x: -100, opacity: 0 }} // Initial position and opacity for the first div
         animate={{ x: 0, opacity: 1 }} // Animation for the first div when it appears
         transition={{ type: "spring", stiffness: 100 }}>
-        <Image src={home} alt="" height={400} width={500}  className="shadow-lg"/>
+        <Image src={Home} alt="" height={400} width={500}  className="shadow-lg"/>
       </motion.div>
       <motion.div
         className="w-[100%] flex flex-col gap-2"
