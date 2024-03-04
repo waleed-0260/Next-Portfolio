@@ -6,6 +6,7 @@ import portfolio1 from "@/images/portfolio1.png"
 import portfolio2 from "@/images/portfolio2.png"
 import portfolio3 from "@/images/portfolio3.png"
 import portfolio4 from "@/images/portfolio4.png"
+import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
 import { useTheme } from './ThemeContext';
 
@@ -24,7 +25,7 @@ const PortfolioSection = () => {
       id: 2,
       href: "https://jobhunt.realcube.estate",
       img: portfolio2,
-      heading: "REALCUBE JOBHUNT",
+      heading: "Real Cube Job Portal",
       text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
     },
     {
@@ -32,22 +33,21 @@ const PortfolioSection = () => {
       href: "https://felixhawk.com/",
       img: portfolio3,
       heading: "Felix Hawk",
-      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
+      text: "In the development of Felix Hawk, a digital marketing agency website, I leveraged React.js and custom CSS to create a dynamic and visually appealing online presence."
     },
     {
       id: 4,
       href: "https://zaman-marketer.vercel.app/",
       img: portfolio4,
       heading: "Zaman Marketer",
-      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
-
+      text: "For my friend, a talented digital marketer, I had the privilege of developing a captivating portfolio website using React.js."
     },
     {
       id: 5,
       href: "https://jobhunt.realcube.estate",
-      img: portfolio2,
-      heading: "REALCUBE JOBHUNT",
-      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
+      img: portfolio5,
+      heading: "Real Cube Property Portal",
+      text: "Real Cube Property Portal Worked on implementing the Chatbot it is actually a Q/A "
 
     },
     {
@@ -67,7 +67,7 @@ const PortfolioSection = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-md md:w-[26vw] sm:w-[43vw] ${darkMode ? "bg-white text-black bg-red-600": ""}`}>
+            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg md:w-[26vw] sm:w-[43vw] ${darkMode ? " text-black bg-red-600 bg-opacity-80": ""}`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 

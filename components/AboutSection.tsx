@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion";
 import { useTheme } from './ThemeContext';
 import { Button } from './ui/button';
-
+import Link from 'next/link';
 const AboutSection = () => {
   const { darkMode } = useTheme();
 
@@ -27,7 +27,9 @@ const AboutSection = () => {
             I&apos;m excited to embark on new challenges, collaborate with like-minded individuals, and continue pushing the boundaries of what&apos;s possible in the world of front-end development.
         </p>
         <div>
-        <Button variant={'outline'} className="rounded-3xl bg-black text-white">Portfolio</Button>
+          <Link href={"/portfolio"}>
+        <Button variant={'outline'} className="rounded-3xl bg-black text-white"> Check Out Portfolio</Button>
+          </Link>
         </div>
 
     </motion.div>

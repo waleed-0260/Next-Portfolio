@@ -42,10 +42,10 @@ const Header = () => {
         )}
         </div>
     </div>
-    <div className="flex sm:hidden flex-row items-center justify-between p-2 w-full shadow-md transition-all">
+    <div className={`flex sm:hidden flex-row items-center justify-between p-2 w-full shadow-md ${darkMode ? "bg-black": "bg-white"} transition-all`}>
         <Sheet>
           <SheetTrigger>
-            <AiOutlineMenu className="mr-3"/>
+            <AiOutlineMenu className={`mr-3 ${darkMode ? "text-white": "text-black"}`}/>
           </SheetTrigger>
           <SheetContent className="flex flex-start items-start">
             <SheetHeader className="mt-8">
