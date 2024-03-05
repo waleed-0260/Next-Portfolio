@@ -23,7 +23,7 @@ const PortfolioDetail = (heading: any) => {
           ? "Felix Hawk"
           : heading.heading === "4"
           ? "Zaman Marketer"
-          : null}
+          : heading.heading === "5" ? "Real Cube Property Portal":null}
       </h1>
       <div className="flex flex-col gap-4 mt-6">
         <div>
@@ -63,7 +63,11 @@ const PortfolioDetail = (heading: any) => {
               expertise, experience, and successful campaigns, with the goal of
               attracting potential clients or employers.
             </p>
-          ) : null}
+          ) : heading.heading === "5" ? (
+            <p>
+              The RealCube Property Portal Chatbot, built using React.js, serves as an intelligent virtual assistant designed to enhance user experience and streamline interactions for visitors exploring properties on the RealCube property portal.
+            </p>
+          ):null}
         </div>
         <div>
           <b>Technologies used</b>
@@ -78,7 +82,7 @@ const PortfolioDetail = (heading: any) => {
                 ? "React.Js, React Router DOM"
                 : heading.heading === "4"
                 ? "React.Js, React Calendly, React Floating Whatsapp"
-                : null}
+                : " React.Js"}
             </li>
             <li className="list-disc">
               <b>Styling:</b>{" "}
@@ -90,7 +94,7 @@ const PortfolioDetail = (heading: any) => {
                 ? "CSS, Swiper"
                 : heading.heading === "4"
                 ? "CSS"
-                : null}
+                : "Tailwind css"}
             </li>
             <li className="list-disc">
               <b>API Integration:</b> Server-side APIs for dynamic data
