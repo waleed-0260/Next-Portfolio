@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTheme } from './ThemeContext';
 
 const Footer = () => {
-    const { darkMode } = useTheme();
+    // const { darkMode } = useTheme();
 
     const [hoveredLink, setHoveredLink] = useState(null);
 
@@ -17,16 +17,16 @@ const Footer = () => {
       setHoveredLink(null);
     };
   
-    const links = [
-      { text: <FaLinkedinIn className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
-      { text:  <FaInstagram className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
-      { text: <FaFacebook className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
-      { text: <FaGithub className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" }
-    ];
+    // const links = [
+    //   { text: <FaLinkedinIn className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
+    //   { text:  <FaInstagram className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
+    //   { text: <FaFacebook className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },
+    //   { text: <FaGithub className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" }
+    // ];
   return (
-    <div className={`flex sm:flex-row flex-col justify-around sm:items-center p-4 w-full shadow-md ${darkMode ? "bg-black text-white": ""}`}>
+    <div className={`flex sm:flex-row flex-col justify-around sm:items-center p-4 w-full shadow-md text-white`}>
        <div className="flex flex-row gap-3 mt-2">
-       {links.map((link, index) => (
+       {/* {links.map((link, index) => (
         <Link 
           key={index} 
           href={link.href} 
@@ -39,7 +39,7 @@ const Footer = () => {
         >
           {link.text}
         </Link>
-      ))}
+      ))} */}
         {/* <Link href="#" className="p-2 rounded-full border border-black hover:border-red-600 shadow-2xl"   style={{
     boxShadow: "0 5px 15px 5px rgba(212, 0, 0, 0.8)", // Adjust the spread value to increase the shadow
   }}>

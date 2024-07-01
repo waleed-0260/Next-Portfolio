@@ -8,10 +8,9 @@ import portfolio3 from "@/images/portfolio3.png"
 import portfolio4 from "@/images/portfolio4.png"
 import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
-import { useTheme } from './ThemeContext';
+// import { useTheme } from './ThemeContext';
 
 const PortfolioSection = () => {
-  const { darkMode } = useTheme();
 
   const portfolio = [
     {
@@ -59,15 +58,14 @@ const PortfolioSection = () => {
     }
   ]
   return (
-    <div className={`flex flex-col p-9 items-center justify-center ${darkMode ? "bg-black text-white": ""}`}>
-      <h1 className='text-2xl font-bold '>Portfolio</h1>
-      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:w-[85%] w-[100%] gap-5 mt-2'>
+    <div className={`flex flex-col p-9 items-center justify-center`}>
+      <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-9 mt-2'>
         {portfolio.map((item:any)=>{
           const communitySlug = item.heading
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg md:w-[26vw] sm:w-[43vw] ${darkMode ? " text-black bg-red-600 bg-opacity-80": ""}`}>
+            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] `}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
