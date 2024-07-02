@@ -59,13 +59,13 @@ const PortfolioSection = () => {
   ]
   return (
     <div className={`flex flex-col p-9 items-center justify-center`}>
-      <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-9 mt-2'>
+      <div className='sm:grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 flex flex-col justify-center items-center gap-9 mt-2'>
         {portfolio.map((item:any)=>{
           const communitySlug = item.heading
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[80vw]`}>
+            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 

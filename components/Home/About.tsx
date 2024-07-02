@@ -66,8 +66,8 @@ const About = () => {
         <Button variant={"outline"} className="w-[140px] bg-transparent hover:bg-black hover:text-white mt-5 rounded-3xl">See More</Button>
       </div>
 
-      <div>
-        <Image src={about} alt="about image" className="w-[400px] h-[400px] rounded-lg" />
+      <div className="mt-4 sm:mt-0">
+        <Image src={about} alt="about image" className="sm:w-[400px] w-[80vw] h-[400px] rounded-lg" />
         <div>
           {" "}
           <b>6+ YEARS</b>
