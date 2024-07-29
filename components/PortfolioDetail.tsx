@@ -1,17 +1,15 @@
 "use client";
 import React from "react";
-import { useTheme } from "./ThemeContext";
+// import { useTheme } from "./ThemeContext";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import PreviewModal from "./PreviewModal";
 const PortfolioDetail = (heading: any) => {
-  const { darkMode } = useTheme();
+  // const { darkMode } = useTheme();
 
   return (
     <div
-      className={`flex flex-col p-8 text-black ${
-        darkMode ? "bg-black text-white" : null
-      }`}
+      className={`flex flex-col p-8 text-black `}
     >
       <h1 className="font-bold text-3xl">
         {" "}

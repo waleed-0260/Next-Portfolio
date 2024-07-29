@@ -7,15 +7,15 @@ import { useTheme } from './ThemeContext';
 const Footer = () => {
     // const { darkMode } = useTheme();
 
-    const [hoveredLink, setHoveredLink] = useState(null);
+    // const [hoveredLink, setHoveredLink] = useState(null);
 
-    const handleMouseEnter = (index:any) => {
-      setHoveredLink(index);
-    };
+    // const handleMouseEnter = (index:any) => {
+    //   setHoveredLink(index);
+    // };
   
-    const handleMouseLeave = () => {
-      setHoveredLink(null);
-    };
+    // const handleMouseLeave = () => {
+    //   setHoveredLink(null);
+    // };
   
     // const links = [
     //   { text: <FaLinkedinIn className={`${darkMode ? "text-red-700": "text-black"} text-md`} />, href: "#" },

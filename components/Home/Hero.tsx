@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import AOS from "aos"
 import 'aos/dist/aos.css';
+// import resume from "@/images/resume.pdf"
 
 const Hero = () => {
   const links = [
@@ -61,7 +62,9 @@ const Hero = () => {
             </Link>
           ))}
         </div>
+        {/* <a href={resume} download> */}
         <Button variant={"outline"} className="bg-white hover:bg-black hover:text-white mt-4 rounded-3xl">Download CV</Button>
+        {/* </a> */}
       </div>
     </div>
   );
