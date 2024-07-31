@@ -71,8 +71,8 @@
   }
 }
 
-.ptag {
-  color: "#7E7E7E";
+.text {
+  color: #A9ADB8;
 }
  
 @layer base {
@@ -82,4 +82,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.heading{
+  color: #FEC544;
 }

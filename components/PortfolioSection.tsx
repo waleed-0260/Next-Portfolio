@@ -65,13 +65,13 @@ const PortfolioSection = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]`}>
+            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
-          <b className='font-bold'>{item.heading} </b>
-          <p className=''>{item.text}</p>
-          <p className='underline'>View More</p>
+          <b className='font-bold heading'>{item.heading} </b>
+          <p className=' text'>{item.text}</p>
+          <p className='underline heading'>View More</p>
           </div>
         </Link>
           )

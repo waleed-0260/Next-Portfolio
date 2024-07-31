@@ -4,6 +4,7 @@ import Hero from "./Home/Hero";
 import About from "./Home/About";
 import Portfolio from "./Home/Portfolio";
 import What from "./Home/What";
+import Skills from "./Home/Skills";
 
 const HomeSection = () => {
 
@@ -15,9 +16,10 @@ const HomeSection = () => {
   // ];
 
   return (
-    <div className="flex flex-col justify-center items-center md:w-[85%] w-[100%]">
+    <div className="flex flex-col justify-center items-center md:w-[100%] w-[100%] bg-[#0A101E]">
     <Hero/>
     <About/>
+    <Skills/>
     <What/>
     <Portfolio/>
     {/* <Contact/> */}

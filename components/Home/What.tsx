@@ -41,8 +41,8 @@ const What = () => {
   }, []);
   return (
     <div className=" flex flex-col  gap-5 m-10 "  data-aos="fade-up">
-      <h2 className="text-4xl font-bold text-center sm:text-left">What I DO</h2>
-      <p className="md:w-[60%] w-[80vw] text-center sm:text-left">
+      <h2 className="text-4xl font-bold text-center sm:text-left heading">What I DO</h2>
+      <p className="md:w-[60%] w-[80vw] text-center sm:text-left text">
         A frontend developer builds interactive user interfaces using React,
         Next.js, and Tailwind CSS, ensuring responsive design and seamless user
         experiences.
@@ -51,8 +51,8 @@ const What = () => {
       <div className="sm:grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 flex flex-col justify-center items-center">
         <Dialog>
           <DialogTrigger>
-            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] h-[240px] ">
-              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md bg-[#F4F4F4] hover:text-white hover:bg-black transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
+            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] bg-[#101624] h-[250px] mt-2">
+              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <HiCode className="text-4xl" />
                 <b className="text-2xl font-bold">Front End Development</b>
                 <p className="mt-3 flex flex-row  items-center gap-3">
@@ -90,8 +90,8 @@ const What = () => {
 
         <Dialog>
           <DialogTrigger>
-            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] h-[250px] mt-2">
-              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md bg-[#F4F4F4] hover:text-white hover:bg-black transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
+            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] bg-[#101624] h-[250px] mt-2">
+              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <FiPenTool className="text-4xl" />
                 <b className="text-2xl font-bold">UI/UX</b>
                 <p className="mt-3 flex flex-row  items-center gap-3">
@@ -118,8 +118,8 @@ const What = () => {
 
         <Dialog>
           <DialogTrigger>
-            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] h-[250px] mt-2">
-              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md bg-[#F4F4F4] hover:text-white hover:bg-black transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
+            <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] bg-[#101624] h-[250px] mt-2">
+              <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <TfiServer className="text-4xl" />
                 <b className="text-2xl font-bold">Back End Team</b>
                 <p className="mt-3 flex flex-row  items-center gap-3">
@@ -145,8 +145,8 @@ const What = () => {
         </Dialog>
         <Dialog>
           <DialogTrigger>
-        <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] h-[250px] mt-2">
-          <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md bg-[#F4F4F4] hover:text-white hover:bg-black transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
+        <Tilt options={defaultOptions} className="sm:w-[250px] w-[70vw] bg-[#101624] h-[250px] mt-2">
+          <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center ">
             <FaBug className="text-4xl" />
             <b className="text-2xl font-bold">Code Quality Assurance</b>
             <p className="mt-3 flex flex-row  items-center gap-3">
