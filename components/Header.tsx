@@ -41,7 +41,7 @@ const Header = () => {
           <SheetTrigger>
             <AiOutlineMenu className={`mr-3 text`}/>
           </SheetTrigger>
-          <SheetContent className="flex flex-start items-start">
+          <SheetContent className="flex flex-start items-start bg-[#0A101E]">
             <SheetHeader className="mt-8">
               <SheetDescription className="mt-5 flex flex-col gap-3 items-start">
                 <p className="cursor-pointer text mt-6">Home </p>

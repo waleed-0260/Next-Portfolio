@@ -14,7 +14,7 @@ const Skills = () => {
       }, []);
   return (
     <div
-      className="flex md:flex-row flex-col mn justify-around w-full m-10"
+      className="flex md:flex-row flex-col md:items-left items-center justify-around w-full m-10"
     >
       <div className="flex flex-col" data-aos="fade-right">
         <h1 className="text-4xl font-bold heading">MY SKILLS</h1>

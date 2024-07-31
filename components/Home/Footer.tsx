@@ -26,7 +26,7 @@ const Footer = () => {
         },
       ];
   return (
-    <div className='w-full flex md:flex-row flex-col items-center justify-around text-black shadow-md h-[70px] bg-[#0A101E] text'>
+    <div className='w-full flex md:flex-row flex-col items-center justify-around text-black shadow-md bg-[#0A101E] text'>
         <div>
             <p className='font-bold text-md'>Muhammad Waleed Ahsan</p>
         </div>
