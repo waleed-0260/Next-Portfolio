@@ -49,7 +49,7 @@ const Hero = () => {
         <p className="text-[#7E7E7E] font-semibold font-poppins">Hello, I&apos;m Waleed Ahsan</p>
         <h2 className="text-5xl font-bold heading">Full Stack Developer</h2>
         <p className="md:w-[60%] w-[80vw] mt-3 text">
-        I'm a Full Stack Developer expert in the MERN stack and Next.js. I have over 2 years of experience in making amazing, secure, fast, and scalable web applications. I use React and Next.js for efficient frontend development, and for a secure backend and database, I use Node.js, MongoDB, and PostgreSQL.</p>
+        I&apos;m a Full Stack Developer expert in the MERN stack and Next.js. I have over 2 years of experience in making amazing, secure, fast, and scalable web applications. I use React and Next.js for efficient frontend development, and for a secure backend and database, I use Node.js, MongoDB, and PostgreSQL.</p>
         <div className="flex flex-row gap-3 mt-2">
           {links.map((link, index) => (
             <Link
