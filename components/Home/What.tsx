@@ -20,6 +20,7 @@ import collab from "@/images/collab.jpg";
 import Image from "next/image";
 import AOS from "aos"
 import 'aos/dist/aos.css';
+import { Element } from "react-scroll";
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
@@ -40,7 +41,7 @@ const What = () => {
     });
   }, []);
   return (
-    <div className=" flex flex-col  gap-5 m-10 "  data-aos="fade-up">
+    <Element name="services" className=" flex flex-col  gap-5 m-10 "  data-aos="fade-up">
       <h2 className="text-4xl font-bold text-center sm:text-left heading">What I DO</h2>
       <p className="md:w-[60%] w-[80vw] text-center sm:text-left text">
         A frontend developer builds interactive user interfaces using React,
@@ -170,7 +171,7 @@ const What = () => {
           </DialogContent>
         </Dialog>
       </div>
-    </div>
+    </Element>
   );
 };
 

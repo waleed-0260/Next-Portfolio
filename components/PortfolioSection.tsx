@@ -9,7 +9,15 @@ import portfolio4 from "@/images/portfolio4.png"
 import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
 // import { useTheme } from './ThemeContext';
-
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import PortfolioDetail from './PortfolioDetail'
 const PortfolioSection = () => {
 
   const portfolio = [
@@ -65,7 +73,18 @@ const PortfolioSection = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
+        //     <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
+        //   <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
+        //   <div className='p-3 flex flex-col'>
+
+        //   <b className='font-bold heading'>{item.heading} </b>
+        //   <p className=' text'>{item.text}</p>
+        //   <p className='underline heading'>View More</p>
+        //   </div>
+        // </Link>
+        <Dialog key={item.id}>
+  <DialogTrigger>
+  <div className={`flex flex-col items-start justify-start rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624] text-white`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
@@ -73,7 +92,17 @@ const PortfolioSection = () => {
           <p className=' text'>{item.text}</p>
           <p className='underline heading'>View More</p>
           </div>
-        </Link>
+        </div>
+  </DialogTrigger>
+  <DialogContent className="sm:max-w-[925px] h-[85%] overflow-auto bg-[#0A101E]">
+    <DialogHeader>
+      {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
+      <DialogDescription>
+        <PortfolioDetail heading={item.id}/>
+      </DialogDescription>
+    </DialogHeader>
+  </DialogContent>
+</Dialog>
           )
         })}
         {/* <Link href={'https://ict-next-demo.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>

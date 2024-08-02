@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import PreviewModal from "./PreviewModal";
 const PortfolioDetail = (heading: any) => {
   // const { darkMode } = useTheme();
+  console.log("heading", heading.heading)
 
   return (
     <div

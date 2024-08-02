@@ -2,9 +2,11 @@
 import React, {useEffect} from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import about from "@/images/about.jpg";
+import about from "@/images/about.webp";
 import { Progress } from "../ui/progress";
 import AOS from "aos"
+import { Element } from 'react-scroll';
+
 
 const About = () => {
   useEffect(() => {
@@ -14,13 +16,12 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="flex md:flex-row flex-col items-center justify-around w-full m-10">
+    <Element name="about" className="flex md:flex-row flex-col items-center justify-around w-full m-10">
       <div className="flex flex-col sm:items-start items-center" data-aos="fade-right">
         <h1 className="text-4xl font-bold heading">ABOUT ME</h1>
         <b className="mt-5 text sm:text-left text-center">Hi, I&apos;m Muhammad Waleed Ahsan</b>
         <p className="md:w-[40vw] w-[80vw] text-black text">
-        I&apos;m an expert in MERN stack development with over 2 years of experience. As a Computer Science student with a huge passion for computer-based technology, I excel in creating efficient and user-friendly interfaces using React and Next.js. My strong foundation in JavaScript enables me to work seamlessly with these technologies. I have extensive experience in building secure and scalable backend systems using Node.js, MongoDB, and PostgreSQL. I&apos;m currently pursuing my degree in Information Technology from BZU Multan, Pakistan, and continue to expand my skills in this dynamic field.
-        </p>
+        I am an expert in MERN stack development with over 2 years of experience. As a dedicated Computer Science student with a profound passion for computer-based technology, I excel in creating efficient and user-friendly interfaces using React and Next.js. My strong foundation in JavaScript enables seamless integration with these technologies. I have extensive experience in building secure and scalable backend systems using Node.js, MongoDB, and PostgreSQL. Currently, I am pursuing my degree in Information Technology from BZU Multan, Pakistan, and continuously expanding my skills in this dynamic field.</p>
 
         <div className="flex flex-col">
           <div className="mt-[5px] flex flex-row items-center gap-4 text">
@@ -83,12 +84,12 @@ const About = () => {
       </div>
 
       <div className="mt-4 sm:mt-0" data-aos="fade-left">
-        <Image src={about} alt="about image" className="sm:w-[400px] w-[80vw] h-[400px] rounded-lg" />
+        <Image src={about} alt="about image" className="sm:w-[450px] w-[80vw] h-[400px] rounded-lg" />
         <div>
           {" "}
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

@@ -3,6 +3,8 @@
 import React, {useEffect} from "react";
 import { Progress } from "../ui/progress";
 import AOS from "aos"
+import ProgressBar from "@ramonak/react-progress-bar";
+
 
 
 const Skills = () => {
@@ -26,40 +28,125 @@ const Skills = () => {
 
       <div className="mt-4 sm:mt-0" data-aos="fade-left">
       <div className="flex flex-col gap-1 mt-3 mt-6">
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           JavaScript
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={97} className="h-[5px] bg-yellow-600"/>
+            {/* <Progress value={97} className="h-[5px] bg-yellow-600"/> */}
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           ReactJs
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={99} className="h-[5px] bg-yellow-600"/>
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           NextJs
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={99} className="h-[5px] bg-yellow-600"/>
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           Node JS
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={90} className="h-[5px] bg-yellow-600"/>
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           MongoDB
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={90} className="h-[5px] bg-yellow-600"/>
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
-        <div className="flex flex-col font-bold gap-1 mt-3 heading">
+        <div className="flex flex-col font-bold gap-1 mt-3 text">
+          <div className="flex flex-row items-center justify-between">
+            <p>
           MySql
+            </p>
+            <p>99%</p>
+
+          </div>
           <div className="md:w-[450px] w-[80vw]">
-            <Progress value={90} className="h-[5px] bg-yellow-600"/>
+            <ProgressBar 
+    completed={99}
+    bgColor="#FEC544"
+    height="5px"
+    isLabelVisible={false}
+    labelColor="#e80909"
+    baseBgColor="#ffffff"
+    animateOnRender
+    />
           </div>
         </div>
       </div>
