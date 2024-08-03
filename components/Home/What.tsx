@@ -56,7 +56,7 @@ const What = () => {
               <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <HiCode className="text-4xl" />
                 <b className="text-2xl font-bold">Front End Development</b>
-                <p className="mt-3 flex flex-row  items-center gap-3">
+                <p className="mt-3 flex flex-row  items-center gap-3 text-[#FEC544]">
                   Learn More <GoArrowRight />
                 </p>
               </div>
@@ -95,7 +95,7 @@ const What = () => {
               <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <FiPenTool className="text-4xl" />
                 <b className="text-2xl font-bold">UI/UX</b>
-                <p className="mt-3 flex flex-row  items-center gap-3">
+                <p className="mt-3 flex flex-row  items-center gap-3 text-[#FEC544]">
                   Learn More <GoArrowRight />
                 </p>
               </div>
@@ -123,7 +123,7 @@ const What = () => {
               <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center">
                 <TfiServer className="text-4xl" />
                 <b className="text-2xl font-bold">Back End Team</b>
-                <p className="mt-3 flex flex-row  items-center gap-3">
+                <p className="mt-3 flex flex-row  items-center gap-3 text-[#FEC544]">
                   Learn More <GoArrowRight />
                 </p>
               </div>
@@ -150,7 +150,7 @@ const What = () => {
           <div className="sm:w-[250px] w-[70vw] h-[250px] rounded-md  text-white border-[1px] border-[#232935] transition duration-700 cursor-pointer flex flex-col items-center justify-center text-center ">
             <FaBug className="text-4xl" />
             <b className="text-2xl font-bold">Code Quality Assurance</b>
-            <p className="mt-3 flex flex-row  items-center gap-3">
+            <p className="mt-3 flex flex-row  items-center gap-3 text-[#FEC544]">
               Learn More <GoArrowRight />
             </p>
           </div>

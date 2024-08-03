@@ -4,7 +4,7 @@ import React, {useEffect} from "react";
 import { Progress } from "../ui/progress";
 import AOS from "aos"
 import ProgressBar from "@ramonak/react-progress-bar";
-
+import { Button } from "../ui/button";
 
 
 const Skills = () => {
@@ -24,6 +24,7 @@ const Skills = () => {
         With a very strong foundation in JavaScript, I excel in leveraging its full potential to build efficient and scalable applications. My expertise in React and Next.js allows me to create dynamic, responsive, and user-friendly interfaces that enhance user experience. This combination of skills ensures high-performance frontend development tailored to meet modern web standards.<br />
         <br />
         On the backend, I am skilled in Node.js and Express.js, which enables me to develop secure and scalable server-side solutions. Additionally, I have hands-on experience with MongoDB for NoSQL databases and have successfully completed projects using MySQL, demonstrating my versatility in managing various types of databases.</p>
+        <Button variant={"outline"} className="bg-white hover:bg-[#FEC544] w-[200px] hover:text-black transition-all mt-4 border-none rounded-3xl">Get a Purposal</Button>
       </div>
 
       <div className="mt-4 sm:mt-0" data-aos="fade-left">
@@ -33,13 +34,13 @@ const Skills = () => {
             <p>
           JavaScript
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             {/* <Progress value={97} className="h-[5px] bg-yellow-600"/> */}
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}
@@ -54,12 +55,12 @@ const Skills = () => {
             <p>
           ReactJs
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}
@@ -74,12 +75,12 @@ const Skills = () => {
             <p>
           NextJs
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}
@@ -94,12 +95,12 @@ const Skills = () => {
             <p>
           Node JS
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}
@@ -114,12 +115,12 @@ const Skills = () => {
             <p>
           MongoDB
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}
@@ -134,12 +135,12 @@ const Skills = () => {
             <p>
           MySql
             </p>
-            <p>99%</p>
+            <p>100%</p>
 
           </div>
           <div className="md:w-[450px] w-[80vw]">
             <ProgressBar 
-    completed={99}
+    completed={100}
     bgColor="#FEC544"
     height="5px"
     isLabelVisible={false}

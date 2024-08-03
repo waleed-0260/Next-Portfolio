@@ -7,6 +7,8 @@ import What from "./Home/What";
 import Skills from "./Home/Skills";
 import Review from "./Home/Review";
 import Blog from "./Home/Blog";
+import Contact from "./Home/Contact";
+import Resume from "./Home/Resume";
 
 const HomeSection = () => {
 
@@ -25,8 +27,9 @@ const HomeSection = () => {
     <What/>
     <Portfolio/>
     <Review/>
+    <Resume/>
     <Blog/>
-    {/* <Contact/> */}
+    <Contact/>
     </div>
 //     <div
 //     className={`flex sm:flex-row flex-col items-center justify-between p-6 gap-2 ${darkMode ? "bg-black text-white": ""} transition-all`}

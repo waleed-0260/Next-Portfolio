@@ -49,8 +49,12 @@ const Hero = () => {
       <div className="flex justify-center items-center flex-col">
         <p className="text-[#7E7E7E] font-semibold font-poppins">Hello, I&apos;m Waleed Ahsan</p>
         <h2 className="sm:text-5xl text-2xl font-bold heading">Full Stack Developer</h2>
-        <p className="md:w-[60%] w-[80vw] mt-3 text">
-        As a Full Stack Developer with over 2 years of experience, I specialize in crafting secure, fast, and scalable web applications using the MERN stack and Next.js. My expertise lies in efficient frontend development with React and Next.js, complemented by a robust backend utilizing Node.js, MongoDB, and PostgreSQL.</p>
+        <p className="md:w-[60%] w-[80vw] mt-3 text text-center">
+        As a Full Stack Developer with 2+ years of experience, I specialize in building secure, fast, and scalable web apps with MERN stack and Next.js. My expertise shines in frontend development using React and Next.js, and I create robust backends with Node.js, MongoDB, and PostgreSQL.
+</p>
+        <p className="font-bold text-xl text">
+*Ready to transform your ideas into reality*
+        </p>
         <div className="flex flex-row gap-3 mt-2">
           {links.map((link, index) => (
             <Link
@@ -63,7 +67,7 @@ const Hero = () => {
           ))}
         </div>
         {/* <a href={resume} download> */}
-        <Button variant={"outline"} className="bg-white hover:bg-[#FEC544] hover:text-black transition-all mt-4 rounded-3xl">Download CV</Button>
+        <Button variant={"outline"} className="bg-white hover:bg-[#FEC544] border-none hover:text-black transition-all mt-4 rounded-3xl">Download CV</Button>
         {/* </a> */}
       </div>
     </Element>

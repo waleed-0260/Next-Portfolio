@@ -37,7 +37,7 @@ const Review = () => {
       name: "Nagmani Bhushan",
       text: "“Displays a commendable ability to learn quickly and apply skills effectively, making valuable contributions to our projects.”",
       position: "Manager at EXALOGIC CONSULTING",
-      img: test2
+      img: test3
     },
   ];
   return (
@@ -63,7 +63,7 @@ const Review = () => {
           },
         }}
         loop={true}
-        className="w-[80vw] h-[290px]"
+        className="w-[80vw] h-[340px]"
       >
         {services.map((item) => {
           return (
@@ -79,7 +79,7 @@ const Review = () => {
     <Image src={item.img} alt="" className="h-[70px] w-[70px] object-contain"/>
   </div>
   <p className='font-bold text-white mt-1'>{item.name}</p>
-  <p className='text'>{item.position}</p>
+  <p className='text text-center'>{item.position}</p>
   </div>
 </SwiperSlide>
           );

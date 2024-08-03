@@ -8,16 +8,6 @@ import portfolio3 from "@/images/portfolio3.png"
 import portfolio4 from "@/images/portfolio4.png"
 import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
-// import { useTheme } from './ThemeContext';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import PortfolioDetail from './PortfolioDetail'
 const PortfolioSection = () => {
 
   const portfolio = [
@@ -26,7 +16,7 @@ const PortfolioSection = () => {
       href: "https://ict-next-demo.vercel.app/",
       img: portfolio1,
       heading: "ICT (International Capital Trading)",
-      text: "Built a responsive Finding Home project using Next.js and Tailwind CSS. Leveraged server-side APIs for dynamic data integration."
+      text: "Built a responsive Finding Home project using Next.js and Tailwind CSS. Leveraged server-side APIs for dynamic data integration.",
     },
     {
       id: 2,
@@ -44,14 +34,14 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      href: "https://zaman-marketer.vercel.app/",
+      href: "https://furns-ecommerce.vercel.app/",
       img: portfolio4,
-      heading: "Zaman Marketer",
-      text: "For my friend, a talented digital marketer, I had the privilege of developing a captivating portfolio website using React.js."
+      heading: "Furns Ecommerce",
+      text: "This is a Full Stack application made using Next Js page router, Zustand for State Management and React tools"
     },
     {
       id: 5,
-      href: "https://jobhunt.realcube.estate",
+      href: "https://property.realcube.estate/",
       img: portfolio5,
       heading: "Real Cube Property Portal",
       text: "Real Cube Property Portal Worked on implementing the Chatbot it is actually a Q/A "
@@ -73,36 +63,15 @@ const PortfolioSection = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-        //     <Link href={`/portfolioDetail/${item.id}`} key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
-        //   <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
-        //   <div className='p-3 flex flex-col'>
-
-        //   <b className='font-bold heading'>{item.heading} </b>
-        //   <p className=' text'>{item.text}</p>
-        //   <p className='underline heading'>View More</p>
-        //   </div>
-        // </Link>
-        <Dialog key={item.id}>
-  <DialogTrigger>
-  <div className={`flex flex-col items-start justify-start rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624] text-white`}>
+            <div key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
           <b className='font-bold heading'>{item.heading} </b>
           <p className=' text'>{item.text}</p>
-          <p className='underline heading'>View More</p>
+          <Link href={item.href} target='blank' className='underline heading mt-2'>View Full Project</Link>
           </div>
         </div>
-  </DialogTrigger>
-  <DialogContent className="sm:max-w-[925px] h-[85%] overflow-auto bg-[#0A101E]">
-    <DialogHeader>
-      {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
-      <DialogDescription>
-        <PortfolioDetail heading={item.id}/>
-      </DialogDescription>
-    </DialogHeader>
-  </DialogContent>
-</Dialog>
           )
         })}
         {/* <Link href={'https://ict-next-demo.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>

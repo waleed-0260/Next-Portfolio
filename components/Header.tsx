@@ -41,7 +41,7 @@ const Header = () => {
     <div className={`flex sm:hidden flex-row items-center justify-between p-2 w-full shadow-md bg-[#0A101E] text-white transition-all`}>
         <Sheet>
           <SheetTrigger>
-            <AiOutlineMenu className={`mr-3 text`}/>
+            <AiOutlineMenu className={`mr-3 heading text-2xl`}/>
           </SheetTrigger>
           <SheetContent className="flex flex-start items-start bg-[#0A101E]">
             <SheetHeader className="mt-8">

@@ -6,6 +6,7 @@ import about from "@/images/about.webp";
 import { Progress } from "../ui/progress";
 import AOS from "aos"
 import { Element } from 'react-scroll';
+import Link from "next/link";
 
 
 const About = () => {
@@ -21,26 +22,51 @@ const About = () => {
         <h1 className="text-4xl font-bold heading">ABOUT ME</h1>
         <b className="mt-5 text sm:text-left text-center">Hi, I&apos;m Muhammad Waleed Ahsan</b>
         <p className="md:w-[40vw] w-[80vw] text-black text">
-        I am an expert in MERN stack development with over 2 years of experience. As a dedicated Computer Science student with a profound passion for computer-based technology, I excel in creating efficient and user-friendly interfaces using React and Next.js. My strong foundation in JavaScript enables seamless integration with these technologies. I have extensive experience in building secure and scalable backend systems using Node.js, MongoDB, and PostgreSQL. Currently, I am pursuing my degree in Information Technology from BZU Multan, Pakistan, and continuously expanding my skills in this dynamic field.</p>
+        With over 2 years of hands-on experience, I'm a seasoned expert in MERN stack development. As a dedicated Computer Science student and passionate tech enthusiast, I specialize in crafting efficient, user-friendly interfaces using React and Next.js. My robust JavaScript skills ensure seamless integration across these technologies.
+<br />
+I excel in building secure, scalable backend systems using Node.js, MongoDB, and PostgreSQL. Currently, I'm pursuing a degree in Information Technology from BZU Multan, Pakistan, while continuously honing my skills in this dynamic field.
+<br />
+        </p>
+        <p className="font-bold text mt-2">
+Let's build the future together!
+
+        </p>
 
         <div className="flex flex-col">
-          <div className="mt-[5px] flex flex-row items-center gap-4 text">
-            <p className="font-bold text-md">Phone:</p>
+        <ul className="mt-[5px] gap-4 text list-disc">
+  <li className="flex items-center space-x-2 relative">
+    <span className="absolute -left-5 list-disc text-2xl">•</span>
+    <p className="font-bold text-md">Email:</p>
+    <p className="break-all overflow-wrap-break-word text-sm">muhamamdwaleedahsan43@gmail.com</p>
+  </li>
+</ul>
+          <ul className="mt-[5px] flex  gap-4 text list-disc">
+          <li className="flex items-center space-x-2 relative">
+          <span className="absolute -left-5 list-disc text-2xl">•</span>
+                      <p className="font-bold text-md">Phone:</p>
             <p>+923342987718</p>
-          </div>
-          {/* <div className="mt-[5px] flex flex-row items-center gap-4 text ">
-            <p className="font-bold text-md">Email:</p>
-            <p className="break-all overflow-wrap-break-word">muhamamdwaleedahsan43@gmail.com</p>
-          </div> */}
-          <div className="mt-[5px] flex flex-row items-center gap-4 text">
-            <p className="font-bold text-md">From:</p>
+            </li>
+          </ul>
+          <ul className="mt-[5px] gap-4 text list-disc">
+          <li className="flex items-center space-x-2 relative">
+          <span className="absolute -left-5 list-disc text-2xl">•</span>            <p className="font-bold text-md">Github:</p>
+            <Link href="https://github.com/waleed0260" target="blank">github.com/waleed0260</Link>
+            </li>
+          </ul>
+          <ul className="mt-[5px] gap-4 text list-disc">
+          <li className="flex items-center space-x-2 relative">
+          <span className="absolute -left-5 list-disc text-2xl">•</span>            <p className="font-bold text-md">Address:</p>
             <p>Multan, Pakistan</p>
+            </li>
+          </ul>
+          <ul className="mt-[5px] gap-4 text list-disc">
+          <li className="flex items-center space-x-2 relative">
+          <span className="absolute -left-5 list-disc text-2xl">•</span>            <p className="font-bold text-md">Location:</p>
+            <p>Freelance, InHouse</p>
+            </li>
+          </ul>
+          <Button variant={"outline"} className="bg-white hover:bg-[#FEC544] w-[200px] hover:text-black transition-all mt-4 border-none rounded-3xl">Start a Conversation</Button>
           </div>
-          <div className="mt-[5px] flex flex-row items-center gap-4 text">
-            <p className="font-bold text-md">Freelance:</p>
-            <p>Available</p>
-          </div>
-        </div>
 
         {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-6">
           <div className="flex flex-col font-bold gap-3">
