@@ -22,13 +22,13 @@ const About = () => {
         <h1 className="text-4xl font-bold heading">ABOUT ME</h1>
         <b className="mt-5 text sm:text-left text-center">Hi, I&apos;m Muhammad Waleed Ahsan</b>
         <p className="md:w-[40vw] w-[80vw] text-black text">
-        With over 2 years of hands-on experience, I'm a seasoned expert in MERN stack development. As a dedicated Computer Science student and passionate tech enthusiast, I specialize in crafting efficient, user-friendly interfaces using React and Next.js. My robust JavaScript skills ensure seamless integration across these technologies.
+        With over 2 years of hands-on experience, I&apos;m a seasoned expert in MERN stack development. As a dedicated Computer Science student and passionate tech enthusiast, I specialize in crafting efficient, user-friendly interfaces using React and Next.js. My robust JavaScript skills ensure seamless integration across these technologies.
 <br />
-I excel in building secure, scalable backend systems using Node.js, MongoDB, and PostgreSQL. Currently, I'm pursuing a degree in Information Technology from BZU Multan, Pakistan, while continuously honing my skills in this dynamic field.
+I excel in building secure, scalable backend systems using Node.js, MongoDB, and PostgreSQL. Currently, I&apos;m pursuing a degree in Information Technology from BZU Multan, Pakistan, while continuously honing my skills in this dynamic field.
 <br />
         </p>
         <p className="font-bold text mt-2">
-Let's build the future together!
+Let&apos;s build the future together!
 
         </p>
 

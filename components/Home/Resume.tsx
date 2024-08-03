@@ -34,7 +34,7 @@ const Resume = () => {
               <p className="text">
                 Collaborated closely with the back-end team to seamlessly
                 integrate APIs into the frontend, thereby optimizing the
-                platform's performance.
+                platform&apos;s performance.
               </p>
             </li>
             <li className="text-white mt-3">

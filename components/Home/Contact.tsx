@@ -8,7 +8,7 @@ const Contact = () => {
       <p className="font-bold text-2xl heading">CONTACT US</p>
       <div className="flex md:flex-row flex-col justify-between w-[80vw] mt-8">
         <div className="flex flex-col  md:w-[50%] ">
-          <p className="text-3xl text">LET'S HAVE A CHAT</p>
+          <p className="text-3xl text">LET&apos;S HAVE A CHAT</p>
           <form action="" className="flex flex-col">
             <input
               type="text"
