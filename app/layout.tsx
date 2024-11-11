@@ -19,14 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <ThemeProvider> */}
-        <Header/>{children}
-        <Footer/>
-        {/* </ThemeProvider> */}
-        {/* <Script type="text/javascript" src="vanilla-tilt.js"/> */}
-        {/* <Script type="text/javascript" src="vanilla-tilt.js"></Script> */}
-
+      <body className={inter.className} style={{backgroundColor:"#0A101E"}}>
+        {children}
         </body>
     </html>
   );

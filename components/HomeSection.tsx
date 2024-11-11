@@ -9,6 +9,8 @@ import Review from "./Home/Review";
 import Blog from "./Home/Blog";
 import Contact from "./Home/Contact";
 import Resume from "./Home/Resume";
+import Header from "./Header";
+import Footer from "./Home/Footer";
 
 const HomeSection = () => {
 
@@ -20,6 +22,8 @@ const HomeSection = () => {
   // ];
 
   return (
+    <>
+    {/* <Header/> */}
     <div className="flex flex-col justify-center items-center md:w-[100%] w-[100%] bg-[#0A101E]">
     <Hero/>
     <About/>
@@ -31,6 +35,8 @@ const HomeSection = () => {
     <Blog/>
     <Contact/>
     </div>
+    {/* <Footer/> */}
+    </>
 //     <div
 //     className={`flex sm:flex-row flex-col items-center justify-between p-6 gap-2 ${darkMode ? "bg-black text-white": ""} transition-all`}
 // >

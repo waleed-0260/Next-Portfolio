@@ -13,7 +13,7 @@ const Portfolio = () => {
   }, []);
   return (
     <>
-      <Element name="portfolio" className="flex flex-col m-10" data-aos="fade-up">
+      <Element name="portfolio" className="flex flex-col m-10 w-[90%]" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-center sm:text-left heading">Portfolio</h2>
         <PortfolioSection/>
       </Element>

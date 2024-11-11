@@ -25,18 +25,17 @@ const Header = () => {
     <div className={`sm:flex hidden flex-row items-center justify-around p-2 w-full shadow-md bg-[#0A101E] text-white transition-all`}>
         <div>
             <Link to="home" smooth={true} duration={500}>
-            <b className='font-bold text-2xl'>DEVELOPER</b>
+            <b className='font-bold text-2xl'>WALEED</b>
             </Link>
         </div>
-        <div>
-            <ul className={`flex flex-row items-center gap-5 text`}>
-                <li className='list-none cursor-pointer'> <Link to="home" smooth={true} duration={500}>Home</Link></li>
-                <li className='list-none cursor-pointer'> <Link to="about" smooth={true} duration={500}>About</Link></li>
-                <li className='list-none cursor-pointer'> <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-                <li className='list-none cursor-pointer'> <Link to="services" smooth={true} duration={500}>Services</Link></li>
-                <li className='list-none cursor-pointer'> <Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+        <div >
+            <ul className={`flex flex-row items-center gap-5 `}>
+                <li className='list-none cursor-pointer text-[#A9ADB8] transition-all hover:text-[#FEC544]'> <Link to="about" smooth={true} duration={500}>About</Link></li>
+                <li className='list-none cursor-pointer text-[#A9ADB8] transition-all hover:text-[#FEC544]'> <Link to="services" smooth={true} duration={500}>Services</Link></li>
+                <li className='list-none cursor-pointer text-[#A9ADB8] transition-all hover:text-[#FEC544]'> <Link to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
         </div>
+        <button className='w-[240px] border-white border-[2px] rounded-[100px] py-2 italic text-sm bg-transparent hover:bg-[#FEC544] hover:text-black hover:border-[#F3C544] transition duration-300'>AVAILABLE FOR FREELANCE</button>
     </div>
     <div className={`flex sm:hidden flex-row items-center justify-between p-2 w-full shadow-md bg-[#0A101E] text-white transition-all`}>
         <Sheet>

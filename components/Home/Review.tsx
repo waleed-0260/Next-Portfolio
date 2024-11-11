@@ -2,8 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-import { Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 import test from "../../images/test.png";
 import test2 from "../../images/test2.png"
@@ -41,13 +40,10 @@ const Review = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-[90%]">
       <p className="font-bold text-2xl heading">REVIEWS</p>
       <Swiper
-        // navigation={true}
-        // modules={[Pagination, Navigation]}
-        // slidesPerView={3}
-        // pagination={{ clickable: true }}
+      modules={[Autoplay]}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -63,11 +59,14 @@ const Review = () => {
           },
         }}
         loop={true}
-        className="w-[80vw] h-[340px]"
+        autoplay={{
+          delay: 3000, // 3 seconds delay
+          disableOnInteraction: false, // autoplay continues after user interaction
+        }}        className="w-full h-[340px]"
       >
         {services.map((item) => {
           return (
-<SwiperSlide className='p-[20px]' key={item.id}>
+<SwiperSlide className='p-9' key={item.id}>
   <div className="flex items-center justify-center flex-col">
   <div className='border-[1px] border-[#232935] bg-[#101624] w-full flex items-center justify-center relative'>
     <p className='p-2 text'>

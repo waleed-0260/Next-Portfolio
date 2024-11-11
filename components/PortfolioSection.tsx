@@ -56,14 +56,14 @@ const PortfolioSection = () => {
     }
   ]
   return (
-    <div className={`flex flex-col p-9 items-center justify-center`}>
-      <div className='sm:grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 flex flex-col justify-center items-center gap-9 mt-2'>
+    <div className={`flex flex-col mt-5 items-center justify-center`}>
+      <div className='sm:grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 flex flex-col justify-center items-center gap-9 mt-2 '>
         {portfolio.map((item:any)=>{
           const communitySlug = item.heading
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <div key={item.id} className={`flex flex-col rounded-md shadow-lg lg:w-[24vw] sm:w-[35vw] w-[85vw]  bg-[#101624]`}>
+            <div key={item.id} className={`flex flex-col justify-between rounded-md shadow-lg lg:w-[100%] sm:w-[35vw] w-[85vw] bg-[#101624] h-[380px]`}>
           <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
           <div className='p-3 flex flex-col'>
 
@@ -74,55 +74,6 @@ const PortfolioSection = () => {
         </div>
           )
         })}
-        {/* <Link href={'https://ict-next-demo.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={portfolio1} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> </b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link>
-        <Link href={'https://jobhunt.realcube.estate/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={portfolio2} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> Lorem ipsum</b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link>
-        <Link href={'https://felixhawk.com/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={portfolio3} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> Lorem ipsum</b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link>
-        <Link href={'https://zaman-marketer.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={portfolio4} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> Lorem ipsum</b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link>
-        <Link href={'/https://ict-next-demo.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={home} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> Lorem ipsum</b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link>
-        <Link href={'/https://ict-next-demo.vercel.app/'} target='blank' className='flex flex-col shadow-md w-[400px]'>
-          <Image src={home} alt="" height={300} width={700} className="h-[200px] w-[100%]"/>
-          <div className='p-3 flex flex-col'>
-
-          <b className='font-bold'> Lorem ipsum</b>
-          <p className=''> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-        </Link> */}
-
       </div>
     </div>
   )

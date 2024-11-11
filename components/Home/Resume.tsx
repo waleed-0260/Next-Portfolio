@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 const Resume = () => {
   return (
-    <div className="w-[75vw] flex flex-col items-center justify-center ">
+    <div className="w-[90%] flex flex-col items-center justify-center ">
       <p className="text-2xl font-bold heading">RESUME</p>
 
       <div className="flex md:flex-row flex-col justify-between mt-4">

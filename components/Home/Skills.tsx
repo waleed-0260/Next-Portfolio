@@ -1,23 +1,53 @@
 "use client"
 
-import React, {useEffect} from "react";
-import { Progress } from "../ui/progress";
-import AOS from "aos"
+import React, {useEffect, useState} from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { Button } from "../ui/button";
 
 
 const Skills = () => {
-    useEffect(() => {
-        AOS.init({
-          duration: 1200, // Animation duration
-          once: true, // Whether animation should happen only once - while scrolling down
-        });
-      }, []);
+  const [right, setRight] = useState(1200);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the scroll position from the top of the page
+      const scrollPosition = window.scrollY;
+
+      // Adjust the offset based on the scroll position
+      if (scrollPosition < 300) {
+        // Range from 1200 to 600
+        setRight(1200 - (scrollPosition * 600) / 300);
+      } else if (scrollPosition < 600) {
+        // Range from 600 to 0
+        setRight(600 - ((scrollPosition - 300) * 600) / 300);
+      } else {
+        // Below 600, the offset is 0
+        setRight(0);
+      }
+
+      // When scrolling back up, reset accordingly
+      if (scrollPosition < 300) {
+        setRight(1200);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
   return (
     <div
-      className="flex md:flex-row flex-col md:items-left items-center justify-around w-full m-10"
+      className=" w-[90%] m-10 overflow-hidden"
     >
+      <div
+        className="w-full bg-white h-[1px] relative transition-all duration-300 "
+        style={{ right: `${right}px` }}
+      ></div>
+      <div className="flex md:flex-row flex-col md:items-left items-center justify-between mt-4">
+
       <div className="flex flex-col" data-aos="fade-right">
         <h1 className="text-4xl font-bold heading">MY SKILLS</h1>
         <p className="md:w-[40vw] w-[80vw] text-black mt-[20px] text">
@@ -150,6 +180,7 @@ const Skills = () => {
     />
           </div>
         </div>
+      </div>
       </div>
       </div>
     </div>
