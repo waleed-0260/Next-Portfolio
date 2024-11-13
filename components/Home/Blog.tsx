@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Blog = () => {
   return (
     <div className='flex flex-col items-center justify-center w-[90%] m-[30px]'>
-        <p className='font-bold text-2xl heading'>BLOGS</p>
+        <p className='font-bold text-4xl heading'>BLOGS</p>
         <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7 mt-3 items-center justify-center w-[80vw]'>
             <div className='flex flex-col h-[420px] w-[100%] border-[1px] border-[#232935] bg-[#101624]'>
                 <div className='w-full h-[57%]'>

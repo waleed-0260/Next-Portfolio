@@ -139,3 +139,18 @@ body, html{
   /* text-fill-color: transparent; */
   animation: gradientMove 1s linear infinite;
 }
+
+.imgContainer img {
+  width: 100%;
+  height: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0); 
+  transition: transform 2s; 
+}
+
+.imgContainer:hover img {
+  transform: translateY(-85%); 
+  transition: 4s;
+}

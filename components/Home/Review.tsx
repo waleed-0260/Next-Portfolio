@@ -28,7 +28,7 @@ const Review = () => {
       id: 3,
       name: "Ali Hyder",
       text: " “Exceptional work on our website—demonstrated impressive skill and attention to detail, resulting in a functional product.”",
-      position: "CEO Felix Hawk",
+      position: "CEO FELIX HAWK",
       img: test3
     },
     {
@@ -36,12 +36,19 @@ const Review = () => {
       name: "Nagmani Bhushan",
       text: "“Displays a commendable ability to learn quickly and apply skills effectively, making valuable contributions to our projects.”",
       position: "Manager at EXALOGIC CONSULTING",
+      img: test
+    },
+    {
+      id: 3,
+      name: "Zaman Zahoor",
+      text: " “Exceptional work on our website—demonstrated impressive skill and attention to detail, resulting in a functional product.”",
+      position: "CEO SPEARING SYSTEMS",
       img: test3
     },
   ];
   return (
     <div className="flex flex-col items-center w-[90%]">
-      <p className="font-bold text-2xl heading">REVIEWS</p>
+      <p className="font-bold text-4xl heading">REVIEWS</p>
       <Swiper
       modules={[Autoplay]}
         breakpoints={{

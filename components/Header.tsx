@@ -35,7 +35,7 @@ const Header = () => {
                 <li className='list-none cursor-pointer text-[#A9ADB8] transition-all hover:text-[#FEC544]'> <Link to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
         </div>
-        <button className='w-[240px] border-white border-[2px] rounded-[100px] py-2 italic text-sm bg-transparent hover:bg-[#FEC544] hover:text-black hover:border-[#F3C544] transition duration-300'>AVAILABLE FOR FREELANCE</button>
+        <a href='https://linkedin.com/in/waleed0260' target='black' className='w-[240px] border-white border-[2px] rounded-[100px] py-2 italic text-sm bg-transparent text-center hover:bg-[#FEC544] hover:text-black hover:border-[#F3C544] transition duration-300'>AVAILABLE FOR FREELANCE</a>
     </div>
     <div className={`flex sm:hidden flex-row items-center justify-between p-2 w-full shadow-md bg-[#0A101E] text-white transition-all`}>
         <Sheet>

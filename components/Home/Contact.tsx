@@ -5,7 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center w-[80vw] m-[20px]">
-      <p className="font-bold text-2xl heading">CONTACT US</p>
+      <p className="font-bold text-4xl heading">CONTACT US</p>
       <div className="flex md:flex-row flex-col justify-between w-[80vw] mt-8">
         <div className="flex flex-col  md:w-[50%] ">
           <p className="text-3xl text">LET&apos;S HAVE A CHAT</p>

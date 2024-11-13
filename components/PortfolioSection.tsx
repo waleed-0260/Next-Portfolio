@@ -8,34 +8,39 @@ import portfolio3 from "@/images/portfolio3.png"
 import portfolio4 from "@/images/portfolio4.png"
 import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
+import ict from "@/images/ict.png"
+import furns from "@/images/furns.png"
+import felixhawk from "@/images/felixhawk.png"
+import jobhunt from "@/images/jobhunt.png"
+import spearing from "@/images/spearing.png"
 const PortfolioSection = () => {
 
   const portfolio = [
     {
       id: 1,
       href: "https://ict-next-demo.vercel.app/",
-      img: portfolio1,
+      img: ict,
       heading: "ICT (International Capital Trading)",
       text: "Built a responsive Finding Home project using Next.js and Tailwind CSS. Leveraged server-side APIs for dynamic data integration.",
     },
     {
       id: 2,
       href: "https://jobhunt.realcube.estate",
-      img: portfolio2,
+      img: jobhunt,
       heading: "Real Cube Job Portal",
       text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
     },
     {
       id: 3,
       href: "https://felixhawk.com/",
-      img: portfolio3,
+      img: felixhawk,
       heading: "Felix Hawk",
       text: "In the development of Felix Hawk, a digital marketing agency website, I leveraged React.js and custom CSS to create a dynamic and visually appealing online presence."
     },
     {
       id: 4,
       href: "https://furns-ecommerce.vercel.app/",
-      img: portfolio4,
+      img: furns,
       heading: "Furns Ecommerce",
       text: "This is a Full Stack application made using Next Js page router, Zustand for State Management and React tools"
     },
@@ -50,9 +55,9 @@ const PortfolioSection = () => {
     {
       id: 6,
       href: "https://felixhawk.com/",
-      img: portfolio3,
-      heading: "Felix Hawk",
-      text: "This is a JobHunt Application made with React.js. In this project, I have implemented all the APIs and made sure that the full website is dynamic."
+      img: spearing,
+      heading: "Spearing Systems",
+      text: "Developed a Full Stack responsive website for a Digital Marketing Agency using NextJs, Framer Motion and Postgress"
     }
   ]
   return (
@@ -63,8 +68,10 @@ const PortfolioSection = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
           return(
-            <div key={item.id} className={`flex flex-col justify-between rounded-md shadow-lg lg:w-[100%] sm:w-[35vw] w-[85vw] bg-[#101624] h-[380px]`}>
-          <Image src={item.img} alt="" height={300} width={700} className="h-[200px] w-[100%] rounded-t-md"/>
+            <div key={item.id} className={`flex flex-col justify-around rounded-md shadow-lg lg:w-[100%] sm:w-[35vw] w-[85vw] bg-[#101624] h-[380px]`}>
+              <div className='h-[200px] relative overflow-hidden width-[100%] imgContainer'>
+          <Image src={item.img} alt="" height={300} width={700}/>
+              </div>
           <div className='p-3 flex flex-col'>
 
           <b className='font-bold heading'>{item.heading} </b>
