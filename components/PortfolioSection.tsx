@@ -54,7 +54,7 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      href: "https://felixhawk.com/",
+      href: "https://spearingsystems.com/",
       img: spearing,
       heading: "Spearing Systems",
       text: "Developed a Full Stack responsive website for a Digital Marketing Agency using NextJs, Framer Motion and Postgress"
