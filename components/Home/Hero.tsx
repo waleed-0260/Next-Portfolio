@@ -45,7 +45,7 @@ const Hero = () => {
     },
     {
       text: <FaGithub className={`"text-black" text-md`} />,
-      href: "https://github.com/Waleed0260",
+      href: "https://github.com/Waleed-0260",
     },
   ];
 
