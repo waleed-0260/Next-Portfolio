@@ -1,11 +1,11 @@
 "use client"
 import React from 'react'
-import home from "@/images/home.jpg"
+// import home from "@/images/home.jpg"
 import Image from 'next/image'
-import portfolio1 from "@/images/portfolio1.png"
-import portfolio2 from "@/images/portfolio2.png"
-import portfolio3 from "@/images/portfolio3.png"
-import portfolio4 from "@/images/portfolio4.png"
+// import portfolio1 from "@/images/portfolio1.png"
+// import portfolio2 from "@/images/portfolio2.png"
+// import portfolio3 from "@/images/portfolio3.png"
+// import portfolio4 from "@/images/portfolio4.png"
 import portfolio5 from "@/images/portfolio5.png"
 import Link from 'next/link'
 import ict from "@/images/ict.png"
@@ -13,6 +13,7 @@ import furns from "@/images/furns.png"
 import felixhawk from "@/images/felixhawk.png"
 import jobhunt from "@/images/jobhunt.png"
 import spearing from "@/images/spearing.png"
+import planic from "@/images/planic.png"
 const PortfolioSection = () => {
 
   const portfolio = [
@@ -39,10 +40,10 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      href: "https://furns-ecommerce.vercel.app/",
-      img: furns,
-      heading: "Furns Ecommerce",
-      text: "This is a Full Stack application made using Next Js page router, Zustand for State Management and React tools"
+      href: "https://planicdesign.com",
+      img: planic,
+      heading: "Planic Design",
+      text: "This is a Full Stack application made using Next Js in the Front End and For the Backend MongoDB database and Nodejs Server has been used"
     },
     {
       id: 5,
